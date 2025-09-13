@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navbar -->
+  <nav class="bg-gray-800/50">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="flex-shrink-0">
+          <img src="./images/pfp.png" alt="Logo" class="h-11 w-auto rounded-full" />
+        </div>
+        <div class="hidden sm:flex space-x-4">
+          <a href="#home" class="rounded-md bg-gray-950/50 px-3 py-2 text-sm font-medium text-white">Home</a>
+          <a href="#profile" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Our Profile</a>
+          <a href="#portfolio" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Portfolio</a>
+          <a href="#message" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-white/5 hover:text-white">Message Us</a>
+        </div>
+        <div class="sm:hidden">
+          <button id="menu-btn" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg id="icon-open" class="block h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+            <svg id="icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden sm:hidden px-2 pt-2 pb-3 space-y-1">
+      <a href="#home" class="block rounded-md bg-gray-950/50 px-3 py-2 text-base font-medium text-white">Home</a>
+      <a href="#profile" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Our Profile</a>
+      <a href="#portfolio" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Portfolio</a>
+      <a href="#message" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-white/5 hover:text-white">Message Us</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="relative bg-gray-800 h-[80vh] flex items-center justify-center text-center">
+    <div>
+      <h1 id="greeting" class="text-3xl sm:text-5xl font-bold mb-6">Welcome to Our Company</h1>
+      <p class="text-lg text-gray-300 mb-8">We create amazing digital solutions for your business</p>
+      <a href="#portfolio" class="px-6 py-3 bg-indigo-600 rounded-lg hover:bg-indigo-500 transition">View Portfolio</a>
+    </div>
+    <!-- Banner -->
+    <img src="https://source.unsplash.com/1600x900/?technology,office" alt="Banner" class="absolute inset-0 w-full h-full object-cover opacity-20 -z-10">
+  </section>
+
+  <!-- Our Profile -->
+  <section id="profile" class="py-16 bg-gray-100 text-gray-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Our Profile</h2>
+      
+      <!-- Photo Banner -->
+      <div class="photo-banner rounded-lg mb-12" style="background-image: url('https://source.unsplash.com/1600x900/?office,team');">
+        <div class="h-full w-full flex items-center justify-center bg-black bg-opacity-40 rounded-lg">
+          <h3 class="text-3xl text-white font-bold">Innovating for a Better Future</h3>
+        </div>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-12 items-start">
+        <!-- About the Company -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">About the Company</h3>
+          <p class="text-gray-700 leading-relaxed">
+            We are a company operating in the technology field with a focus on 
+            developing modern web applications. Our main goal is to provide 
+            innovative digital solutions to support business and community needs.
+          </p>
+          <p class="text-gray-700 leading-relaxed mt-4">
+            Founded in 2010, we have grown to serve clients across Southeast Asia 
+            with cutting-edge solutions and exceptional service.
+          </p>
+        </div>
+
+        <!-- Visi Misi -->
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Vision & Mission</h3>
+          <div class="bg-white p-6 rounded-lg shadow-md mb-6">
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Vision</h4>
+            <p class="text-gray-700">To become a trusted technology company in Southeast Asia.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow-md">
+            <h4 class="text-xl font-semibold text-indigo-600 mb-2">Mission</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-700">
+              <li>Provide innovative, modern, and sustainable digital solutions to help clients grow.</li>
+              <li>Create a friendly, professional work ecosystem that supports the development of young talent.</li>
+              <li>Commit to continuous innovation and exceeding customer expectations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Headquarters -->
+  <section id="headquarters" class="py-16 bg-white text-gray-800">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl sm:text-4xl font-bold mb-12">Our Headquarters</h2>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-12">
+        <!-- Jakarta -->
+        <div>
+          <img src="https://source.unsplash.com/200x200/?jakarta,city" 
+               alt="Jakarta" 
+               class="mx-auto rounded-full shadow-md mb-4 w-40 h-40 object-cover headquarters-img">
+          <h3 class="text-xl font-semibold">Jakarta</h3>
+          <p class="text-gray-600">Main Office</p>
+        </div>
+
+        <!-- Bandung -->
+        <div>
+          <img src="https://source.unsplash.com/200x200/?bandung,indonesia" 
+               alt="Bandung" 
+               class="mx-auto rounded-full shadow-md mb-4 w-40 h-40 object-cover headquarters-img">
+          <h3 class="text-xl font-semibold">Bandung</h3>
+          <p class="text-gray-600">Development Center</p>
+        </div>
+
+        <!-- Surabaya -->
+        <div>
+          <img src="https://source.unsplash.com/200x200/?surabaya,city" 
+               alt="Surabaya" 
+               class="mx-auto rounded-full shadow-md mb-4 w-40 h-40 object-cover headquarters-img">
+          <h3 class="text-xl font-semibold">Surabaya</h3>
+          <p class="text-gray-600">Operations Hub</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 bg-gray-100 text-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Our Portfolio</h2>
+      <p class="text-gray-600 text-center max-w-2xl mx-auto mb-12">A showcase of our latest and most impactful project</p>
+
+      <div class="flex justify-center">
+        <div class="bg-white rounded-xl shadow-2xl overflow-hidden w-full max-w-3xl hover-lift">
+          <div class="h-80 overflow-hidden">
+            <img src="./images/template.png" alt="Our Websites Project" class="w-full h-full object-cover transition duration-700 hover:scale-105">
+          </div>
+          <div class="p-8">
+            <div class="flex items-center justify-center mb-6">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-800">Our Websites</h3>
+            </div>
+            <p class="text-gray-600 text-lg text-center mb-6">Modern, responsive, and user-friendly websites designed to elevate your online presence</p>
+            
+            <div class="flex flex-wrap justify-center gap-3 mb-8">
+              <span class="px-4 py-2 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">Responsive Design</span>
+              <span class="px-4 py-2 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">Modern UI/UX</span>
+              <span class="px-4 py-2 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">Fast Performance</span>
+              <span class="px-4 py-2 bg-indigo-100 text-indigo-700 text-sm font-medium rounded-full">SEO Friendly</span>
+            </div>
+            
+            <div class="text-center">
+              <a href="#" class="inline-flex items-center px-6 py-3 bg-gray-800 text-white font-medium rounded-lg hover:bg-indigo-700 transition">
+                <span>View Project Details</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <p class="text-gray-600 mb-6">Interested in seeing more of our work?</p>
+        <a href="#message" class="inline-flex items-center px-6 py-3 border border-gray-800 text-gray-800 rounded-lg hover:bg-gray-600 hover:text-white transition">
+          <span>Get in Touch</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Message Us -->
+  <section id="message" class="py-16 bg-gray-50 text-gray-800">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12">Message Us</h2>
+
+      <form id="messageForm" class="space-y-6 bg-white p-8 rounded-lg shadow-md">
+        <!-- Name -->
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+          <input type="text" id="name" name="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          <div id="nameError" class="error-message mt-1">Please enter your name</div>
+        </div>
+
+        <!-- Birthdate -->
+        <div>
+          <label for="birthdate" class="block text-sm font-medium text-gray-700 mb-2">Birthdate</label>
+          <input type="date" id="birthdate" name="birthdate" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+          <div id="birthdateError" class="error-message mt-1">Please enter your birthdate</div>
+        </div>
+
+        <!-- Gender -->
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">Gender</label>
+          <div class="flex space-x-6 mt-2">
+            <label class="inline-flex items-center">
+              <input type="radio" name="gender" value="Male" class="text-indigo-600 focus:ring-indigo-500">
+              <span class="ml-2">Male</span>
+            </label>
+            <label class="inline-flex items-center">
+              <input type="radio" name="gender" value="Female" class="text-indigo-600 focus:ring-indigo-500">
+              <span class="ml-2">Female</span>
+            </label>
+          </div>
+          <div id="genderError" class="error-message mt-1">Please select your gender</div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+          <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500" placeholder="Type your message here..."></textarea>
+          <div id="messageError" class="error-message mt-1">Please enter your message</div>
+        </div>
+
+        <!-- Submit Button -->
+        <div>
+          <button type="submit" class="w-full px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition">
+            Submit Message
+          </button>
+        </div>
+      </form>
+
+      <!-- Form Result -->
+      <div id="formResult" class="mt-8 p-8 bg-green-50 rounded-lg border border-green-200 hidden">
+        <h3 class="text-xl font-semibold text-green-800 mb-4">✅ Form Submitted Successfully!</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <p class="text-sm text-green-700 font-medium mb-1">Submission Time:</p>
+            <p id="resultTime" class="text-green-900 font-semibold"></p>
+          </div>
+          <div>
+            <p class="text-sm text-green-700 font-medium mb-1">Name:</p>
+            <p id="resultName" class="text-green-900 font-semibold"></p>
+          </div>
+          <div>
+            <p class="text-sm text-green-700 font-medium mb-1">Birthdate:</p>
+            <p id="resultBirthdate" class="text-green-900 font-semibold"></p>
+          </div>
+          <div>
+            <p class="text-sm text-green-700 font-medium mb-1">Gender:</p>
+            <p id="resultGender" class="text-green-900 font-semibold"></p>
+          </div>
+        </div>
+        <div class="mt-6 pt-4 border-t border-green-200">
+          <p class="text-sm text-green-700 font-medium mb-2">Message:</p>
+          <p id="resultMessage" class="text-green-900 bg-white p-4 rounded border border-green-200"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center">
+        <div class="mb-4 md:mb-0">
+          <p class="text-sm">&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+        <div class="flex space-x-6">
+          <a href="#" class="hover:text-white transition">LinkedIn</a>
+          <a href="#" class="hover:text-white transition">GitHub</a>
+          <a href="#" class="hover:text-white transition">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

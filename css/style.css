@@ -1,0 +1,78 @@
+/* Import Tailwind CSS */
+@import url('https://cdn.tailwindcss.com');
+
+/* Custom styles */
+.photo-banner {
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.headquarters-img {
+  transition: transform 0.3s ease;
+}
+
+.headquarters-img:hover {
+  transform: scale(1.05);
+}
+
+/* Style untuk form validation */
+.error-message {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: none;
+}
+
+.input-error {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+/* Style untuk textarea */
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #4F46E5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+/* Utility classes */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-out forwards;
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .headquarters-img {
+    width: 120px;
+    height: 120px;
+  }
+}
